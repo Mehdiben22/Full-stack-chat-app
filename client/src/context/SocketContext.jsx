@@ -18,7 +18,7 @@ export const SocketContextProvider = ({children}) => {
     useEffect(()=> {
         //if a user is ahtentified a socket connexion is established 
      if(authUser) {
-        const socket = io("http://localhost:7000",{
+        const socket = io("https://chat-app-tt6o.onrender.com/",{
             query : {
                 userId : authUser._id   
             }
